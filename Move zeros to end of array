@@ -1,0 +1,16 @@
+/**Given a static array of integers, move all the zeros in the array to the end of the array.**/
+function moveZerosToEnd(array) {
+	/**
+	@param arr: integer[]
+	@return: integer[]
+	*/
+
+	// your code goes here
+  write = 0
+    for read from 0 to array.length - 1:
+        if array[read] != 0:
+            array[read], array[write] = array[write], array[read]
+            write += 1
+
+    return array
+}
